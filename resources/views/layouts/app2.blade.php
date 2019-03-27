@@ -89,7 +89,8 @@
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('登出') }}
                                     </a>
-                                    <a class="dropdown-item" href="#">個人訂單 <span class="sr-only">(current)</span></a>
+                                    <a class="dropdown-item" href="{{url('order')}}">個人訂單 <span class="sr-only">(current)</span></a>
+                                    <a class="dropdown-item" href="">朋友圈 <span class="sr-only">(current)</span></a>
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
                                     </form>

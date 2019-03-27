@@ -1,33 +1,38 @@
-@extends('layouts.app')
- @section('content');
- 
- <div class="container">
-      <div class="row" style="margin-top:50px;">
-      <div class="container">
-      <span style="font-weight:bold; color:#5F9EA0; font-size:22px;">最新公告</span><br><br>
+@extends('layouts.app2')
 
-      @foreach($post as $post)
-      <div id="accordion1">
-    <div style="background-color:#f0f0f0; padding-top:10px; padding-bottom:35px; margin-bottom:5px; border-radius:0.25rem;">
-    
-        <a style="color:#0A0A0A; font-size:18px; float:left;" data-toggle="collapse" href="#{{$post->postid}}">
-        <img src="images/ear.png" width="25" height="25" class="d-inline-block align-top" alt=""><b>【{{$post->title}}】</b>
-        </a>
-      <div id="{{$post->postid}}" class="collapse" data-parent="#accordion1">
-      <br> <br>{{$post->content}}　
-      </div>
-    </div>
-    <br>
-  </div>
-  @endforeach
-  
-    </div> 
-    </div>
-    </div>
+@section('content')
+
+
+
+<div class="container mt-3">
+<div class="row top">
+<div class="col-12">
+
+
+
+<p></p>
+<table border="0" width="100%" height="100%">
+<tr><th>訂單編號</th><th>活動名稱</th><th>種類</th><th>票價</th><th>區域</th><th>座位</th></tr>
+<tr>
+@foreach($order as $order)
+<td>{{$order->order_id}}</td>
+<td>{{$order->prog_name}}</td>
+<td>{{$order->type}}</td>
+<td>{{$order->tick_price}}</td>
+<td>{{$order->tick_area}}</td>
+<td>{{$order->tick_seat}}</td>
+</tr>
+@endforeach
+</table>
+
+
+<hr>
+
 </div>
-<br><br>
-    <hr>
-    <div class="text-white bg-dark p-4" style="position:relative ;top:300px ">
+</div>
+</div>
+
+<div class=" text-white bg-dark p-4" style="position:relative ;top:300px " >
           <div class="row text-center col-12">
             <div class="col-sm-12 col-md-12 col-lg-12 col-12">
             <ul class="nav">
@@ -40,10 +45,10 @@
       <a class="nav-link" href="{{url('clause')}}">服務條款</a>
     </li>
     <li class="nav-item col-2 col-md-2 col-lg-2">
-      <a class="nav-link" href="{{url('privacy')}}">隱私權政策</a>
+      <a class="nav-link" href="#">隱私權政策</a>
     </li>
     <li class="nav-item col-2 col-md-2 col-lg-2">
-      <a class="nav-link" href="{{url('aboutus')}}">關於我們</a>
+      <a class="nav-link" href="#">關於我們</a>
     </li>
     <li class="nav-item col-2 col-md-2 col-lg-2">
     </li>
@@ -63,7 +68,7 @@
         </div>
         </div>
     <br>
-    <footer class="text-center">
+    <footer class="text-center" >
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -73,4 +78,5 @@
       </div>
     </footer>  
     </div>
-    @endsection
+ 
+@endsection

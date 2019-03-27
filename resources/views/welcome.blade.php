@@ -426,7 +426,35 @@
       @foreach($data7 as $program)
         <div class="col-md-4 pb-1 pb-md-0">
           <div class="card">
-            <img class="card-img-top" src="{{$program->img }}"  height="180" alt="Card image cap">
+          <img class="card-img-top" src="{{$program->img }}"  height="180" alt="Card image cap" data-toggle="modal"  href="#9">
+            <div class="modal fade bd-example-modal-lg" id="9" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" id="9">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">{{"$program->prog_name"}}</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <img class="card-img-top" src="{{$program->img }}"  height="400" alt="Card image cap">
+      <br>
+      <br>
+      <p>{{"$program->prog_content"}}</p>
+      <br>
+      <br>
+      <p>售票時間:{{"$program->prog_selldate"}}</p>
+      <p>票價分類:{{"$program->prog_price"}}</p>
+      <p>場地:{{"$program->site_name"}}</p>
+      <p>演出時間:{{"$program->prog_date"}}</p>
+      <img src="{{$program->imgprice }}"  height="500"  alt="Card image cap">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
             <div class="card-body">
             
               <h5 class="card-title">{{"$program->prog_name"}}</h5>
@@ -445,7 +473,35 @@
         @foreach($data7 as $program)
         <div class="col-md-4 pb-1 pb-md-0">
           <div class="card">
-            <img class="card-img-top" src="{{$program->img }}"  height="180" alt="Card image cap">
+          <img class="card-img-top" src="{{$program->img }}"  height="180" alt="Card image cap" data-toggle="modal"  href="#9">
+            <div class="modal fade bd-example-modal-lg" id="9" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" id="9">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">{{"$program->prog_name"}}</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <img class="card-img-top" src="{{$program->img }}"  height="400" alt="Card image cap">
+      <br>
+      <br>
+      <p>{{"$program->prog_content"}}</p>
+      <br>
+      <br>
+      <p>售票時間:{{"$program->prog_selldate"}}</p>
+      <p>票價分類:{{"$program->prog_price"}}</p>
+      <p>場地:{{"$program->site_name"}}</p>
+      <p>演出時間:{{"$program->prog_date"}}</p>
+      <img src="{{$program->imgprice }}"  height="500"  alt="Card image cap">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
             <div class="card-body">
             
               <h5 class="card-title">{{"$program->prog_name"}}</h5>
@@ -464,7 +520,35 @@
         @foreach($data7 as $program)
         <div class="col-md-4 pb-1 pb-md-0">
           <div class="card">
-            <img class="card-img-top" src="{{$program->img }}"  height="180" alt="Card image cap">
+          <img class="card-img-top" src="{{$program->img }}"  height="180" alt="Card image cap" data-toggle="modal"  href="#9">
+            <div class="modal fade bd-example-modal-lg" id="9" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" id="9">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">{{"$program->prog_name"}}</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <img class="card-img-top" src="{{$program->img }}"  height="400" alt="Card image cap">
+      <br>
+      <br>
+      <p>{{"$program->prog_content"}}</p>
+      <br>
+      <br>
+      <p>售票時間:{{"$program->prog_selldate"}}</p>
+      <p>票價分類:{{"$program->prog_price"}}</p>
+      <p>場地:{{"$program->site_name"}}</p>
+      <p>演出時間:{{"$program->prog_date"}}</p>
+      <img src="{{$program->imgprice }}"  height="500"  alt="Card image cap">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
             <div class="card-body">
             
               <h5 class="card-title">{{"$program->prog_name"}}</h5>
@@ -487,10 +571,38 @@
     <div id="menu2" class="container tab-pane fade"><br>
     <div class="container">
       <div class="row text-center">
-      @foreach($data7 as $program)
+      @foreach($data8 as $program)
         <div class="col-md-4 pb-1 pb-md-0">
           <div class="card">
-            <img class="card-img-top" src="{{$program->img }}"  height="180" alt="Card image cap">
+          <img class="card-img-top" src="{{$program->img }}"  height="180" alt="Card image cap" data-toggle="modal"  href="#10">
+            <div class="modal fade bd-example-modal-lg" id="10" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" id="10">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">{{"$program->prog_name"}}</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <img class="card-img-top" src="{{$program->img }}"  height="400" alt="Card image cap">
+      <br>
+      <br>
+      <p>{{"$program->prog_content"}}</p>
+      <br>
+      <br>
+      <p>售票時間:{{"$program->prog_selldate"}}</p>
+      <p>票價分類:{{"$program->prog_price"}}</p>
+      <p>場地:{{"$program->site_name"}}</p>
+      <p>演出時間:{{"$program->prog_date"}}</p>
+      <img src="{{$program->imgprice }}"  height="500"  alt="Card image cap">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
             <div class="card-body">
             
               <h5 class="card-title">{{"$program->prog_name"}}</h5>
@@ -506,10 +618,38 @@
           </div>
         </div>
         @endforeach
-        @foreach($data7 as $program)
+        @foreach($data8 as $program)
         <div class="col-md-4 pb-1 pb-md-0">
           <div class="card">
-            <img class="card-img-top" src="{{$program->img }}"  height="180"alt="Card image cap">
+          <img class="card-img-top" src="{{$program->img }}"  height="180" alt="Card image cap" data-toggle="modal"  href="#10">
+            <div class="modal fade bd-example-modal-lg" id="10" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" id="10">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">{{"$program->prog_name"}}</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <img class="card-img-top" src="{{$program->img }}"  height="400" alt="Card image cap">
+      <br>
+      <br>
+      <p>{{"$program->prog_content"}}</p>
+      <br>
+      <br>
+      <p>售票時間:{{"$program->prog_selldate"}}</p>
+      <p>票價分類:{{"$program->prog_price"}}</p>
+      <p>場地:{{"$program->site_name"}}</p>
+      <p>演出時間:{{"$program->prog_date"}}</p>
+      <img src="{{$program->imgprice }}"  height="500"  alt="Card image cap">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
             <div class="card-body">
             
               <h5 class="card-title">{{"$program->prog_name"}}</h5>
@@ -525,10 +665,38 @@
           </div>
         </div>
         @endforeach
-        @foreach($data7 as $program)
+        @foreach($data8 as $program)
         <div class="col-md-4 pb-1 pb-md-0">
           <div class="card">
-            <img class="card-img-top" src="{{$program->img }}"  height="180" alt="Card image cap">
+          <img class="card-img-top" src="{{$program->img }}"  height="180" alt="Card image cap" data-toggle="modal"  href="#10">
+            <div class="modal fade bd-example-modal-lg" id="10" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" id="10">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">{{"$program->prog_name"}}</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <img class="card-img-top" src="{{$program->img }}"  height="400" alt="Card image cap">
+      <br>
+      <br>
+      <p>{{"$program->prog_content"}}</p>
+      <br>
+      <br>
+      <p>售票時間:{{"$program->prog_selldate"}}</p>
+      <p>票價分類:{{"$program->prog_price"}}</p>
+      <p>場地:{{"$program->site_name"}}</p>
+      <p>演出時間:{{"$program->prog_date"}}</p>
+      <img src="{{$program->imgprice }}"  height="500"  alt="Card image cap">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
             <div class="card-body">
             
             <h5 class="card-title">{{"$program->prog_name"}}</h5>
@@ -564,10 +732,10 @@
       <a class="nav-link" href="{{url('clause')}}">服務條款</a>
     </li>
     <li class="nav-item col-2 col-md-2 col-lg-2">
-      <a class="nav-link" href="#">隱私權政策</a>
+      <a class="nav-link" href="{{url('privacy')}}">隱私權政策</a>
     </li>
     <li class="nav-item col-2 col-md-2 col-lg-2">
-      <a class="nav-link" href="#">加入我們</a>
+      <a class="nav-link" href="{{url('aboutus')}}">關於我們</a>
     </li>
     <li class="nav-item col-2 col-md-2 col-lg-2">
     </li>
