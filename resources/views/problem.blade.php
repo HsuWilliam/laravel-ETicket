@@ -333,10 +333,10 @@ Ex. ABC123456789 over 10 digits, input the first 10 digits as ‘ABC1234567’
       <a class="nav-link" href="{{url('clause')}}">服務條款</a>
     </li>
     <li class="nav-item col-2 col-md-2 col-lg-2">
-      <a class="nav-link" href="#">隱私權政策</a>
+      <a class="nav-link" href="{{url('privacy')}}">隱私權政策</a>
     </li>
     <li class="nav-item col-2 col-md-2 col-lg-2">
-      <a class="nav-link" href="#">加入我們</a>
+      <a class="nav-link" href="{{url('aboutus')}}">關於我們</a>
     </li>
     <li class="nav-item col-2 col-md-2 col-lg-2">
     </li>

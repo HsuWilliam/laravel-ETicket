@@ -21,7 +21,9 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
-Route::get('/activity8', 'HomeController@activity8');
+Route::get('activity8', 'HomeController@activity8');
+
+Route::post('store','payment@store');
 
 Route::get('/problem',function(){
     return view('problem');
@@ -29,8 +31,20 @@ Route::get('/problem',function(){
 Route::get('/clause',function(){
   return view('clause');
 });
-Route::get('/news',function(){
-  return view('news');
+
+Route::get('/privacy',function(){
+  return view('privacy');
 });
 
+Route::get('/news','Controller@news');
+
 Route::get('/order', 'HomeController@personalorder');
+
+Route::get('/allactivity','Controller@allactivity');
+
+
+Route::get('/aboutus',function(){
+  return view('aboutus');
+});
+
+

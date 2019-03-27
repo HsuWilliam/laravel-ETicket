@@ -25,4 +25,18 @@ class Controller extends BaseController
         return view('welcome',compact('data','data2','data3','data4','data5','data6','data7','data8','post'));
         
     }
+
+    public function news(){
+        $post = DB::select('select * from post');
+
+        return view('news',compact('post'));
+    }
+
+    public function allactivity(){
+        $data = DB::select('select * from program ');
+
+
+        return view('allactivity',compact('data'));
+    }
+
 }
